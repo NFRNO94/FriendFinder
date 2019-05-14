@@ -8,7 +8,10 @@ module.exports = function (app) {
 
     app.post("/api/friends", function (req, res) {
         //switch case for answers after more friends are added
-        //friends.push(req.body);
-        //res.json(true);
+        if (friends) {
+            friends.push(req.body);
+            res.json(true);
+        }
+
     });
 };

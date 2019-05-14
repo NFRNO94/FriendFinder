@@ -1,7 +1,7 @@
-let friends = [
+let friendsArray = [
     {
         name: "Roger",
-        photo: "",
+        photo: "img",
         scores: [
             5,
             4,
@@ -16,3 +16,5 @@ let friends = [
         ]
     }
 ]
+
+module.exports = friendsArray;
