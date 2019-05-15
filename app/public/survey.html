@@ -41,7 +41,7 @@
             <div class="col">
                 <h3>Question 1</h3>
                 <h6>Your mind is always buzzing with unexplored ideas and plans.</h6>
-                <select class="custom-select custom-select-sm question" id="q1" style="width: 250px;">
+                <select class="custom-select custom-select-sm" id="q1" style="width: 250px;">
                     <option selected>Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -58,7 +58,7 @@
             <div class="col">
                 <h3>Question 2</h3>
                 <h6>Generally speaking, you rely more on your experience than your imagination.</h6>
-                <select class="custom-select custom-select-sm question" id="q2" style="width: 250px;">
+                <select class="custom-select custom-select-sm" id="q2" style="width: 250px;">
                     <option selected>Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -75,7 +75,7 @@
             <div class="col">
                 <h3>Question 3</h3>
                 <h6>You find it easy to stay relaxed and focused even when there is some pressure.</h6>
-                <select class="custom-select custom-select-sm question" id="q3" style="width: 250px;">
+                <select class="custom-select custom-select-sm" id="q3" style="width: 250px;">
                     <option selected>Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -92,7 +92,7 @@
             <div class="col">
                 <h3>Question 4</h3>
                 <h6>You rarely do something just out of sheer curiosity.</h6>
-                <select class="custom-select custom-select-sm question" id="q4" style="width: 250px;">
+                <select class="custom-select custom-select-sm" id="q4" style="width: 250px;">
                     <option selected>Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -109,7 +109,7 @@
             <div class="col">
                 <h3>Question 5</h3>
                 <h6>People can rarely upset you.</h6>
-                <select class="custom-select custom-select-sm question" id="q5" style="width: 250px;">
+                <select class="custom-select custom-select-sm" id="q5" style="width: 250px;">
                     <option selected>Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -126,7 +126,7 @@
             <div class="col">
                 <h3>Question 6</h3>
                 <h6>It is often difficult for you to relate to other people’s feelings.</h6>
-                <select class="custom-select custom-select-sm question" id="q6" style="width: 250px;">
+                <select class="custom-select custom-select-sm" id="q6" style="width: 250px;">
                     <option selected>Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -143,7 +143,7 @@
             <div class="col">
                 <h3>Question 7</h3>
                 <h6>In a discussion, truth should be more important than people’s sensitivities.</h6>
-                <select class="custom-select custom-select-sm question" id="q7" style="width: 250px;">
+                <select class="custom-select custom-select-sm" id="q7" style="width: 250px;">
                     <option selected>Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -160,7 +160,7 @@
             <div class="col">
                 <h3>Question 8</h3>
                 <h6>You rarely get carried away by fantasies and ideas.</h6>
-                <select class="custom-select custom-select-sm question" id="q8" style="width: 250px;">
+                <select class="custom-select custom-select-sm" id="q8" style="width: 250px;">
                     <option selected>Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -178,7 +178,7 @@
                 <h3>Question 9</h3>
                 <h6>You think that everyone’s views should be respected regardless of whether they are supported by
                     facts or not.</h6>
-                <select class="custom-select custom-select-sm question" id="q9" style="width: 250px;">
+                <select class="custom-select custom-select-sm" id="q9" style="width: 250px;">
                     <option selected>Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -195,7 +195,7 @@
             <div class="col">
                 <h3>Question 10</h3>
                 <h6>You feel more energetic after spending time with a group of people.</h6>
-                <select class="custom-select custom-select-sm question" id="q10" style="width: 250px;">
+                <select class="custom-select custom-select-sm" id="q10" style="width: 250px;">
                     <option selected>Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -252,7 +252,12 @@
                 ]
             }
 
-            console.log(newFriend);
+            let scores = newFriend.scores;
+            console.log(scores);
+
+            //if (scores) {
+                //for (let i = 0; i < )
+            //}
 
             $.post("/api/friends", newFriend,
                 function (data) {
